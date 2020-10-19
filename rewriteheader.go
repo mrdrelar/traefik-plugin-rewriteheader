@@ -1,4 +1,4 @@
-package rewriteheader
+package traefik_plugin_rewriteheader
 
 import (
 	"context"
