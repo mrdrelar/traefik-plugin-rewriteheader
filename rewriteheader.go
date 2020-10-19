@@ -37,7 +37,6 @@ func New(ctx context.Context, next http.Handler, config *Config, name string) (h
 		if config.Prefix != "" {
 			result = config.Prefix + result
 		}
-		rw.Header().Set(config.Create, result)
 		req.Header.Set(config.Create, result)
 		next.ServeHTTP(rw, req)
 	}), nil
